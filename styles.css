@@ -31,6 +31,23 @@ li {
     list-style: none;
 }
 
+/* Back to Top Button */
+.button1 {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    border: none;
+}
+  
+
 /* Background Image */
 .container {
     background-image: url("./assests/images/banner.png");
@@ -124,6 +141,18 @@ li {
 .menu li {
     padding: 5px 14px;
 }
+
+/* Light/Dark Mode button */
+i.fa-solid {
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    align-items: center;
+}
+
+.fa-solid:hover {
+    color: var(--colorOne);
+}
   
   /* DROPDOWN MENU */
 .services {
@@ -205,25 +234,34 @@ input[type=checkbox] {
 
 
 /* ATHLETES */
+#athletes {
+    background-color: var(--colorSix);
+}
+
 .athletes {
-    background-color: #111111;
+    background-color: var(--colorSix);
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    /* padding: 1rem; */
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
     font-size: 24px;
-    /* font-weight: 400; */
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: var(--colorOne);
+    padding: 20px;
 }
 
 .avatar {
-    height: auto;
+    /* height: auto; */
     max-width: 100%;
+    justify-content: center;
+    align-items: center;
     vertical-align: middle;
+    /* border: 2px solid #000000; */
 }
 
 .cards {
@@ -236,7 +274,7 @@ input[type=checkbox] {
 
 .cards_item {
     display: flex;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .card {
@@ -245,12 +283,13 @@ input[type=checkbox] {
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
+    position: relative;
     overflow: hidden;
 }
 
 .avatar {
     width: 350px;
-	transform: translateY(-30px);
+	transform: translateY(10px);
 	margin: 0 auto;
 	filter: drop-shadow(8px 0px 10px #000000);
 	transition: all 150ms ease-in-out;
@@ -261,22 +300,29 @@ input[type=checkbox] {
 }
 
 .card:hover .avatar {
-    transform: scale(0.9) translateY(-15px);
+    transform: scale(0.9) translateY(-10px);
 	opacity: 0.6;
 	filter: blur(4px);
 }
 
 
 .card_content {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    /* left: 0; */
     padding: 1rem;
     background: #5F5A5B;
     color: var(--colorFive);
     font-size: 10px;
+    font-family: 'Lora', serif;
     display: none;
 }
 
 .answer{
     font-weight: 100;
+    padding: 10px;
+    text-align: right;
 }
 
 
@@ -430,6 +476,23 @@ input[type=checkbox] {
             font-size: 14px;
             line-height: 28px;
             font-weight: 500;
+          }
+          .submit {
+            padding: 1.2%;
+            background-color: #ffffff85;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 4px 2px var(--colorOne);
+            cursor: pointer;
+            font-family: 'Plaster', cursive;
+            color: var(--colorSix);
+            transition: all .2s linear;
+          }
+
+          .submit:hover{
+            color: black;
+            padding: 1%;
+            box-shadow: 4px 2px var(--colorSix);
           }
         }
       }
