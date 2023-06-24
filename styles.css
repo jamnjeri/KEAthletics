@@ -54,7 +54,7 @@ li {
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center top; 
-    height: 1000px;  /*100vh in netflify doesn't look great*/
+    height: 900px;  /*100vh in netflify doesn't look great*/
 }
 
 /* NavBar */
