@@ -197,12 +197,16 @@ input[type=checkbox] {
     user-select: none;
 }
 
+.hamburger::before {
+    content: "\2630"; /* Three lines symbol */
+}
+
     /* Media Queries */
 @media (max-width: 768px) {
     .menu {
         display: none;
         position: absolute;
-        background-color: var(--colorOne);
+        background-color: var(--colorThree);
         right: 0;
         left: 0;
         text-align: center;
@@ -210,7 +214,7 @@ input[type=checkbox] {
     }
     .menu li:hover {
         display: inline-block;
-        color: var(--colorOne);
+        color: var(--colorSix);
         /* transition: 0.3s ease; */
     }
     .menu li + li {
@@ -218,6 +222,12 @@ input[type=checkbox] {
     }
     input[type=checkbox]:checked ~ .menu {
         display: block;
+    }
+    #checkbox_toggle {
+        display: none; /* Hide the checkbox */
+    }
+    #checkbox_toggle:checked + .hamburger::before {
+        content: "\2715"; /* Cross symbol */
     }
     .hamburger {
         display: block;
@@ -228,7 +238,7 @@ input[type=checkbox] {
         transform: translateX(35%);
     }
     .dropdown li:hover {
-        background-color: var(--colorOne);
+        background-color: var(--colorSix);
     }
 }
 
@@ -245,6 +255,7 @@ input[type=checkbox] {
     /* padding: 1rem; */
     align-items: center;
     justify-content: center;
+    
 }
 
 .title {
@@ -270,21 +281,25 @@ input[type=checkbox] {
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards_item {
     display: flex;
     padding: 0.5rem;
+    flex-basis: 33.3333%; /* Set initial width for large screens */
 }
 
 .card {
     background-color: var(--colorThree);
-    border-radius: 0.25rem;
+    border-radius: 0.7rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    width: 100%; /* Set initial width for large screens */
 }
 
 .avatar {
@@ -310,13 +325,13 @@ input[type=checkbox] {
     position: absolute;
     top: 40%;
     width: 100%;
-    /* left: 0; */
-    padding: 1rem;
+    padding: 5%;
     background: #5F5A5B;
     color: var(--colorFive);
-    font-size: 10px;
+    font-size: 8px;
     font-family: 'Lora', serif;
     display: none;
+    border: 2px solid green;
 }
 
 .answer{
@@ -326,9 +341,25 @@ input[type=checkbox] {
 }
 
 
-@media (min-width: 40rem) {
+@media (max-width: 40rem) {
     .cards_item {
-        width: 33.3333%;
+      width: 33.3333%;
+    }
+    
+    .card_content {
+      top: 30%; /* Adjust top value for smaller screens */
+      font-size: 6px; /* Adjust font size for smaller screens */
+    }
+}
+  
+@media (max-width: 30rem) {
+    .cards_item {
+      width: 50%;
+    }
+    
+    .card_content {
+      top: 30%; /* Adjust top value for even smaller screens */
+      font-size: 4px; /* Adjust font size for even smaller screens */
     }
 }
 

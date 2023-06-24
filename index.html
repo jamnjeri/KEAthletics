@@ -42,8 +42,8 @@
                 <ul class="nav-links">
 
                     <!-- CHECKBOX HACK -->
-                    <input type="checkbox" id="checkbox toggle" />
-                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger"></label>
 
                     <!-- MENU -->
                     <div class="menu">
@@ -372,8 +372,8 @@
 
                     // Send the email
                     emailjs.send(
-                    env.service_id,    //service ID
-                    env.template_id,   //template ID
+                    "service_mu5uxoo",    //service ID
+                    "template_jd3rq2g",   //template ID
                     {
                         from_name: fullName,
                         to_name: "Jamila Mathu",
@@ -381,7 +381,7 @@
                         to_email: "jamnjeri@gmail.com",
                         message: message,
                     },
-                    env.public_key      //Public Key
+                    "GcedfpJnP-7xmrcZQ"      //Public Key
                     )
                     .then(
                         () => {
