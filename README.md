@@ -2,7 +2,7 @@ KEAthletics
 ===============
 
 ## DESCRIPTION
-A simple landing page about some of the amazing Kenyan Track Athletes. A self challenge to only use HTML, CSS and JavaScript.
+A simple landing page on some of the amazing Kenyan Track Athletes. A self challenge to only use HTML, CSS and JavaScript.
 
 <img src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" width="20px">  <img src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" width="20px"> <img src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" width="20px">  <img src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" width="20px">
 
