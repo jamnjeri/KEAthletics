@@ -39,8 +39,8 @@ li {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgb(12, 12, 12);
     color: white;
@@ -54,7 +54,7 @@ li {
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center top; 
-    height: 850px;  /*100vh in netflify doesn't look great*/
+    height: 800px;  /*100vh in Netflify doesn't look great*/
 }
 
 /* NavBar */
