@@ -203,6 +203,13 @@ input[type=checkbox] {
 
     /* Media Queries */
 @media (max-width: 768px) {
+    .container {
+        background-image: url("./assests/images/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center; 
+        height: 800px;
+    }
     .menu {
         display: none;
         position: absolute;
