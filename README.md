@@ -33,7 +33,7 @@ Currently, the key features and concepts I worked on include:
 
 ## LICENSE:
 [![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-Copyright © 2023 Mathu Jamila
+Copyright © 2026 Mathu Jamila
 
 ## PREVIEW
 <img src="./KEAthletics.png" width="30%" height="30%" />
