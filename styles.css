@@ -319,6 +319,8 @@ input[type=checkbox] {
 	transition: all 150ms ease-in-out;
 }
 
+
+
 .card:hover .card_content {
     display: block;
 }
